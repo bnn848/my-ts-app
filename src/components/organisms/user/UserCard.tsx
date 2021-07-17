@@ -26,7 +26,7 @@ export const UserCard: VFC<Props> = memo((props) => {
         borderRadius="full"
         src={imageUrl}
         alt={userName}
-        m="auto"
+        mx="auto"
       />
       <Text fontSize="lg" fontWeight="bold">{userName}</Text>
       <Text fontSize="sm" color="gray">{fullName}</Text>

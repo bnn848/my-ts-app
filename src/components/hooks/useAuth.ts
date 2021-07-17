@@ -2,7 +2,7 @@ import { useCallback, useState } from "react";
 import { useHistory } from 'react-router-dom';
 import axios from "axios";
 
-import { User } from './../../types/user';
+import { User } from '../../types/api/user';
 import { useMessage } from './useMessage';
 
 /**ログイン機能をカスタムフックとして実装 */
