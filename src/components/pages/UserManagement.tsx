@@ -51,7 +51,7 @@ export const UserManagement: VFC = memo(() => {
     <>
     {loading ? (
       <Center h="100vh">
-          <Spinner />
+        <Spinner />
       </Center>
     ) : (
       <Wrap p={{ base: 4, md: 10 }} justify="center">
@@ -68,7 +68,7 @@ export const UserManagement: VFC = memo(() => {
         ))}
       </Wrap>
     )}
-      <UserDetailModal user={selectedUser} isOpen={isOpen} onClose={onClose} />
+      <UserDetailModal user={selectedUser} isOpen={isOpen} onClose={onClose} isAdmin={loginUser?.isAdmin} />
     </>
   )
 });
